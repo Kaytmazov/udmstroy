@@ -65,11 +65,11 @@ img {
   }
 
   .navbar-left > li {
-    margin: 32px 35px;
+    margin: 34px;
   }
 
   .navbar-right {
-    margin-top: 15px;
+    margin-top: 21px;
 
     > li {
       display: block;
@@ -126,6 +126,7 @@ img {
     .title {
       position: relative;
       display: inline-block;
+      margin-top: 0;
       margin-bottom: 30px;
       padding-bottom: 30px;
       font-size: 48px;
@@ -235,6 +236,7 @@ img {
     justify-content: center;
     height: 290px;
     margin-bottom: 30px;
+    padding: 15px;
     color: #fff;
     background-color: #747474;
     background-size: cover;
@@ -416,9 +418,9 @@ img {
   top: 50%;
   z-index: 10;
   display: block;
-  width: 25px;
-  height: 34px;
-  margin-top: -17px;
+  width: 15px;
+  height: 24px;
+  margin-top: -12px;
   padding: 0;
   font-size: 0;
   line-height: 0;
@@ -569,7 +571,7 @@ img {
 
 /* ====================== Questions ====================== */
 .questions {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 
   .calc-wrapper {
     background-image: url(../img/questions-bg.jpg);
@@ -614,6 +616,11 @@ img {
       bottom: -38px;
       z-index: 10;
     }
+  }
+
+  form {
+    position: relative;
+    z-index: 100;
   }
 }
 
@@ -671,3 +678,8 @@ img {
     border-color: #999;
   }
 }
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@import "media-queries";

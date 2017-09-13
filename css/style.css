@@ -63,11 +63,11 @@ img {
 }
 
 .navbar-inverse .navbar-left > li {
-  margin: 32px 35px;
+  margin: 34px;
 }
 
 .navbar-inverse .navbar-right {
-  margin-top: 15px;
+  margin-top: 21px;
 }
 
 .navbar-inverse .navbar-right > li {
@@ -124,6 +124,7 @@ img {
 .carousel-caption .title {
   position: relative;
   display: inline-block;
+  margin-top: 0;
   margin-bottom: 30px;
   padding-bottom: 30px;
   font-size: 48px;
@@ -250,6 +251,7 @@ img {
           justify-content: center;
   height: 290px;
   margin-bottom: 30px;
+  padding: 15px;
   color: #fff;
   background-color: #747474;
   background-size: cover;
@@ -434,9 +436,9 @@ img {
   top: 50%;
   z-index: 10;
   display: block;
-  width: 25px;
-  height: 34px;
-  margin-top: -17px;
+  width: 15px;
+  height: 24px;
+  margin-top: -12px;
   padding: 0;
   font-size: 0;
   line-height: 0;
@@ -606,7 +608,7 @@ img {
 
 /* ====================== Questions ====================== */
 .questions {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .questions .calc-wrapper {
@@ -651,6 +653,11 @@ img {
   position: absolute;
   bottom: -38px;
   z-index: 10;
+}
+
+.questions form {
+  position: relative;
+  z-index: 100;
 }
 
 /* ====================== footer ====================== */
@@ -700,4 +707,265 @@ img {
 
 .modal .btn-primary {
   border-color: #999;
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  .navbar-inverse .navbar-left > li {
+    margin: 34px 20px;
+  }
+  .navbar-brand {
+    margin-right: 20px;
+  }
+  .carousel-caption .title {
+    padding-bottom: 20px;
+    font-size: 38px;
+  }
+  .media-heading {
+    padding-right: 15%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  .section {
+    margin: 40px 0;
+  }
+  .navbar {
+    min-height: auto;
+  }
+  .navbar-inverse .navbar-left > li {
+    margin: 20px 15px;
+  }
+  .navbar-brand {
+    margin-top: 12px;
+  }
+  .carousel-caption .title {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+  .carousel-indicators {
+    bottom: 10px;
+  }
+  .carousel-arrow svg {
+    width: 15px;
+    stroke-width: 3px;
+  }
+  .advantages-item {
+    margin-bottom: 40px;
+  }
+  .advantages-item:nth-of-type(3) {
+    clear: both;
+  }
+  .calc-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .portfolio-item-info {
+    padding: 10px;
+  }
+  .portfolio-item-info table th {
+    width: 80px;
+    padding-right: 10px;
+  }
+  .reviews-item {
+    padding: 20px;
+  }
+  .reviews-wrapper {
+    padding: 10px;
+  }
+  .media-left {
+    padding-right: 15px;
+    padding-bottom: 25px;
+  }
+  .media-heading {
+    padding-right: 0;
+  }
+  .rating {
+    margin-top: 5px;
+  }
+  .rating-title {
+    font-size: 12px;
+  }
+  .webstudio {
+    margin-top: 30px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 20px;
+  }
+  .section-header {
+    margin-bottom: 20px;
+  }
+  .section-title {
+    padding-bottom: 10px;
+  }
+  .btn-callback {
+    display: inline-block;
+    width: auto;
+  }
+  .navbar {
+    text-align: center;
+  }
+  .navbar-toggle {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  .navbar-left {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .navbar-inverse .navbar-nav > li > a {
+    display: inline-block;
+  }
+  .navbar-inverse .dropdown-menu {
+    text-align: center;
+  }
+  .navbar-inverse .navbar-right {
+    margin-top: 0;
+  }
+  .navbar-inverse .navbar-right > li .mobile {
+    font-size: 18px;
+  }
+  .carousel-inner > .item {
+    height: 250px;
+  }
+  .carousel-inner > .item img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .carousel-caption .title {
+    font-size: 24px;
+  }
+  .carousel-caption .description {
+    margin-bottom: 15px;
+  }
+  .services-item {
+    height: 250px;
+  }
+  .calc-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/calc-bg.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/calc-bg.jpg);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/calc-bg.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/calc-bg.jpg);
+  }
+  .calc .form-desc {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .questions .calc-wrapper {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/questions-bg.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/questions-bg.jpg);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/questions-bg.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/questions-bg.jpg);
+  }
+  .questions .form-wrapper {
+    border: 1px solid #fff;
+  }
+  .questions .form-wrapper::before, .questions .form-wrapper::after {
+    display: none;
+  }
+  .main-footer .btn-callback {
+    float: right;
+    margin-top: 4px;
+  }
+  .footer-nav {
+    margin-top: 30px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
+  .carousel-arrow {
+    display: none;
+  }
+  .carousel-caption .title {
+    font-size: 16px;
+  }
+  .carousel-caption .description {
+    display: none;
+  }
+  .services .col-xs-6 {
+    width: 100%;
+  }
+  .advantages-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .calc .form-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .calc .form-desc {
+    width: 100%;
+  }
+  .questions .form-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .reviews-item {
+    padding: 15px;
+  }
+  .media-left {
+    display: block;
+    padding-right: 0;
+  }
+  .media-left img {
+    margin: 0 auto;
+  }
+  .media-body {
+    display: block;
+    width: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .media .rating-stars {
+    margin: 0 auto;
+  }
+  .media-footer {
+    text-align: justify;
+  }
+  .footer-logo {
+    text-align: center;
+  }
+  .main-footer .btn-callback {
+    display: none;
+  }
+  .footer-nav-list a {
+    font-size: 12px;
+  }
+  .webstudio h6 {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
 }

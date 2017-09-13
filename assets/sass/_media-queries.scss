@@ -1,0 +1,356 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+  .navbar-inverse .navbar-left>li {
+    margin: 34px 20px;
+  }
+
+  .navbar-brand {
+    margin-right: 20px;
+  }
+
+  .carousel-caption .title {
+    padding-bottom: 20px;
+    font-size: 38px;
+  }
+
+  .media-heading {
+    padding-right: 15%;
+  }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  .section {
+    margin: 40px 0;
+  }
+
+  .navbar {
+    min-height: auto;
+
+    &-inverse .navbar-left>li {
+      margin: 20px 15px;
+    }
+
+    &-brand {
+      margin-top: 12px;
+    }
+  }
+
+  .carousel {
+    &-caption .title {
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      font-size: 30px;
+    }
+
+    &-indicators {
+      bottom: 10px;
+    }
+
+    &-arrow svg {
+      width: 15px;
+      stroke-width: 3px;
+    }
+  }
+
+  .advantages-item {
+    margin-bottom: 40px;
+
+    &:nth-of-type(3) {
+      clear: both;
+    }
+  }
+
+  .calc-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .portfolio-item-info {
+    padding: 10px;
+
+    table th {
+      width: 80px;
+      padding-right: 10px;
+    }
+  }
+
+  .reviews {
+    &-item {
+      padding: 20px;
+    }
+  
+    &-wrapper {
+      padding: 10px;
+    }
+  }
+
+  .media {
+    &-left {
+      padding-right: 15px;
+      padding-bottom: 25px;
+    }
+  
+    &-heading {
+      padding-right: 0;
+    }
+  }
+
+  .rating {
+    margin-top: 5px;
+
+    &-title {
+      font-size: 12px;
+    }
+  }
+
+  .webstudio {
+    margin-top: 30px;
+  }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+  h2 {
+    font-size: 20px;
+  } 
+
+  .section {
+    &-header {
+      margin-bottom: 20px;
+    }
+
+    &-title {
+      padding-bottom: 10px;
+    }
+  }
+
+  .btn-callback {
+    display: inline-block;
+    width: auto;
+  }
+
+  .navbar {
+    text-align: center;
+    
+    &-toggle {
+      margin-top: 14px;
+      margin-bottom: 14px;
+    }
+
+    &-left {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &-inverse {
+      .navbar-nav>li>a {
+        display: inline-block;
+      }
+
+      .dropdown-menu {
+        text-align: center;
+      }
+
+      .navbar-right {
+        margin-top: 0;
+
+        > li .mobile {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .carousel {
+    &-inner>.item {
+      height: 250px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-caption {
+      .title {
+        font-size: 24px;
+      }
+  
+      .description {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .services-item {
+    height: 250px;
+  }
+
+  .calc {
+    &-wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url(../img/calc-bg.jpg);
+    }
+  
+    .form-desc {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+
+  .questions {
+    .calc-wrapper {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url(../img/questions-bg.jpg);
+    }
+
+    .form-wrapper {
+      border: 1px solid #fff;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .main-footer .btn-callback {
+    float: right;
+    margin-top: 4px;
+  }
+
+  .footer-nav {
+    margin-top: 30px;
+  }
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .carousel {
+    &-arrow {
+      display: none;
+    }
+
+    &-caption {
+      .title {
+        font-size: 16px;
+      }
+  
+      .description {
+        display: none;
+      }
+    }
+  }
+
+  .services {
+    .col-xs-6 {
+      width: 100%;
+    }
+  }
+
+  .advantages-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .calc {
+    .form-wrapper {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    
+    .form-desc {
+      width: 100%;
+    }
+  }
+
+  .questions .form-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .reviews-item {
+    padding: 15px;
+  }
+
+  .media {
+    &-left {
+      display: block;
+      padding-right: 0;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    &-body {
+      display: block;
+      width: auto;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .rating-stars {
+      margin: 0 auto;
+    }
+
+    &-footer {
+      text-align: justify;
+    }
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .main-footer .btn-callback {
+    display: none;
+  }
+
+  .footer-nav-list a {
+    font-size: 12px;
+  }
+
+  .webstudio h6 {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+
+}

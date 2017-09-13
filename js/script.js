@@ -5,6 +5,12 @@ jQuery('.home-slider').slick({
   pauseOnHover: false,
   responsive: [
     {
+      breakpoint: 815,
+      settings: {
+        arrows: false
+      }
+    },
+    {
       breakpoint: 768,
       settings: {
         arrows: false,
