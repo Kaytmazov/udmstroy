@@ -3,10 +3,13 @@ $primary-color: #f9c82e;
 
 /* ====================== Общие стили ====================== */
 body {
-  max-width: 1700px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: url(../img/body-bg.jpg);
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 
 img {
@@ -112,6 +115,7 @@ img {
 .carousel {
 
   .item img {
+    width: 100%;
     filter: brightness(60%);
   }
 
@@ -156,7 +160,22 @@ img {
   &-arrow {
     position: absolute;
     top: 50%;
-    color: #fff;
+    transform: translateY(-50%);
+
+    svg {
+      stroke: #fff;
+      stroke-width: 6px;
+      stroke-linecap: round; 
+      stroke-linejoin: round;
+      transition-duration: 0.3s;
+    }
+
+    &:hover,
+    &:focus {
+      svg {
+        stroke: $primary-color;
+      }
+    }
 
     &.left {
       left: 5%;
@@ -164,6 +183,10 @@ img {
 
     &.right {
       right: 5%;
+
+      svg {
+        transform: rotate(180deg);
+      }
     }
 
     .glyphicon {
@@ -320,6 +343,7 @@ img {
   }
 
   .form-desc {
+    width: 85%;
     margin-bottom: 25px;
     color: #fff;
   }
@@ -370,7 +394,6 @@ img {
 
         h5 {
           margin: 0;
-          font-weight: 700;
         }
       }
     }
@@ -502,7 +525,6 @@ img {
 
   &-heading {
     padding-right: 30%;
-    font-weight: 700;
   }
 }
 
@@ -542,5 +564,110 @@ img {
     
       &.star5 { width: 100%; }
     }
+  }
+}
+
+/* ====================== Questions ====================== */
+.questions {
+  margin-bottom: 0;
+
+  .calc-wrapper {
+    background-image: url(../img/questions-bg.jpg);
+  }
+
+  .form-wrapper {
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+
+    &::before, 
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 75%;
+      height: 8px;
+      border-radius: 5px;
+    }
+
+    &::before {
+      top: 0;
+      border-top: 1px solid #fff;
+    }
+    
+    &::after {
+      bottom: 0;
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  &-left {
+    position: static;
+
+    img {
+      position: absolute;
+      bottom: -38px;
+      z-index: 10;
+    }
+  }
+}
+
+/* ====================== footer ====================== */
+.main-footer {
+  padding: 25px 0;
+  color: #fff;
+  background-color: #333;
+
+  .btn-callback {
+    margin-top: 30px;
+    padding: 8px 5px;
+    font-size: 14px;
+  }
+}
+
+.footer-nav {
+  &-title {
+    margin-bottom: 17px;
+    text-transform: uppercase;
+  }
+
+  &-list {
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      font-weight: 300;
+      color: #fff;
+    }
+  }
+}
+
+.webstudio h6 {
+  margin-bottom: 20px;
+}
+
+/* ====================== Modal ====================== */
+.modal {
+  .close {
+    font-size: 25px;
+  }
+
+  &-title {
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  &-desc {
+    color: #666;
+  }
+
+  .btn-primary {
+    border-color: #999;
   }
 }

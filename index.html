@@ -123,11 +123,15 @@
     
       <!-- Controls -->
       <a class="carousel-arrow left" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+        <svg width="25" height="45" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#carousel-arrow"></use>
+        </svg>
         <span class="sr-only">Previous</span>
       </a>
       <a class="carousel-arrow right" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+        <svg width="25" height="45" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#carousel-arrow"></use>
+        </svg>
         <span class="sr-only">Next</span>
       </a>
     </div>
@@ -234,9 +238,9 @@
                 <button type="submit" class="btn btn-primary btn-block">Рассчитать</button>
               </form>
             </div>
-          </div>
-        </div>
-      </div>
+          </div><!-- /form-wrapper -->
+        </div><!-- /container -->
+      </div><!-- /calc-wrapper -->
     </section>
 
     <section class="portfolio section">
@@ -455,27 +459,107 @@
       </div><!-- /container -->
     </section>
 
+    <section class="questions calc section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Остались вопросы ?</h2>
+        </header>
+      </div>
+      <div class="calc-wrapper">
+        <div class="container">
+          <div class="form-wrapper">
+            <div class="row">
+              <div class="questions-left col-md-6 col-md-offset-1">
+                <img src="img/questions-man.png" width="411" height="467" alt="">
+              </div>
+              <div class="col-md-5">
+                <p class="form-desc">У вас остались вопросы ? Оставьте заявку и мы перезвоним вам по указанному вами номеру для разрешения ваших вопросов</p>
+                <form>
+                  <div class="form-group">
+                    <label class="sr-only" for="inputNameQ">Как вас зовут</label>
+                    <input type="text" class="form-control no-border" id="inputNameQ" placeholder="Как вас зовут">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="inputTelQ">Ваш номер телефона</label>
+                    <input type="tel" class="form-control no-border" id="inputTelQ" placeholder="Ваш номер телефона">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="inputEmailQ">Ваш E-mail</label>
+                    <input type="email" class="form-control no-border" id="inputEmailQ" placeholder="Ваш E-mail">
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Рассчитать</button>
+                </form>
+              </div>
+            </div>
+          </div><!-- /form-wrapper -->
+        </div><!-- /container -->
+      </div><!-- /calc-wrapper -->
+    </section>
 
-
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <img src="img/logo.png" width="161" height="36" alt="logo">
+            <button class="btn btn-callback btn-block" type="button" data-toggle="modal" data-target="#modalCallback">обратный звонок</button>
+          </div>
+          <div class="footer-nav col-sm-2 col-sm-offset-1">
+            <h6 class="footer-nav-title">Услуги и цены</h6>
+            <ul class="footer-nav-list list-unstyled">
+              <li><a href="#">Строительство</a></li>
+              <li><a href="#">Проектирование</a></li>
+              <li><a href="#">Материалы</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav col-sm-2">
+            <h6 class="footer-nav-title">Информация</h6>
+            <ul class="footer-nav-list list-unstyled">
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Типовые договора</a></li>
+              <li><a href="#">Портфолио</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav col-sm-2">
+            <h6 class="footer-nav-title">Контакты</h6>
+            <ul class="footer-nav-list list-unstyled">
+              <li><a href="tel:89127612782">8 (912) 761-27-82</a></li>
+              <li><a href="mailto:udmstroy@mail.ru">udmstroy@mail.ru</a></li>
+            </ul>
+          </div>
+          <div class="webstudio col-sm-2 col-sm-offset-1">
+            <h6>Разработка сайта:</h6>
+            <img src="img/webstudio.png" width="160" height="67" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Модальное окно - Заказать звонок -->
     <div class="modal fade" id="modalCallback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h3 class="modal-title" id="myModalLabel">Заказать обратный звонок</h3>
+            <h4 class="modal-title" id="myModalLabel">Заказать обратный звонок</h4>
+            <p class="modal-desc">Осатвьте свой номер телефона <br>и мы перезвоним вам в течении 15 минут</p>
           </div>
           <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <form>
+              <div class="form-group">
+                <label class="sr-only" for="inputNameC">Как вас зовут</label>
+                <input type="text" class="form-control" id="inputNameC" placeholder="Как вас зовут">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="inputTelC">Ваш номер телефона</label>
+                <input type="tel" class="form-control" id="inputTelC" placeholder="Ваш номер телефона">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Заказать звонок</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

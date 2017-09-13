@@ -2,10 +2,13 @@
 /* ====================== Переменные ====================== */
 /* ====================== Общие стили ====================== */
 body {
-  max-width: 1700px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: url(../img/body-bg.jpg);
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 
 img {
@@ -106,6 +109,7 @@ img {
 
 /* ====================== Слайдер ====================== */
 .carousel .item img {
+  width: 100%;
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
 }
@@ -155,7 +159,23 @@ img {
 .carousel-arrow {
   position: absolute;
   top: 50%;
-  color: #fff;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.carousel-arrow svg {
+  stroke: #fff;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.carousel-arrow:hover svg, .carousel-arrow:focus svg {
+  stroke: #f9c82e;
 }
 
 .carousel-arrow.left {
@@ -164,6 +184,12 @@ img {
 
 .carousel-arrow.right {
   right: 5%;
+}
+
+.carousel-arrow.right svg {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .carousel-arrow .glyphicon {
@@ -338,6 +364,7 @@ img {
 }
 
 .calc .form-desc {
+  width: 85%;
   margin-bottom: 25px;
   color: #fff;
 }
@@ -389,7 +416,6 @@ img {
 
 .portfolio-item-info table h5 {
   margin: 0;
-  font-weight: 700;
 }
 
 /* ====================== Slick Slider ====================== */
@@ -527,7 +553,6 @@ img {
 
 .media-heading {
   padding-right: 30%;
-  font-weight: 700;
 }
 
 .rating {
@@ -577,4 +602,102 @@ img {
 
 .rating-stars .active.star5 {
   width: 100%;
+}
+
+/* ====================== Questions ====================== */
+.questions {
+  margin-bottom: 0;
+}
+
+.questions .calc-wrapper {
+  background-image: url(../img/questions-bg.jpg);
+}
+
+.questions .form-wrapper {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.questions .form-wrapper::before, .questions .form-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 75%;
+  height: 8px;
+  border-radius: 5px;
+}
+
+.questions .form-wrapper::before {
+  top: 0;
+  border-top: 1px solid #fff;
+}
+
+.questions .form-wrapper::after {
+  bottom: 0;
+  border-bottom: 1px solid #fff;
+}
+
+.questions-left {
+  position: static;
+}
+
+.questions-left img {
+  position: absolute;
+  bottom: -38px;
+  z-index: 10;
+}
+
+/* ====================== footer ====================== */
+.main-footer {
+  padding: 25px 0;
+  color: #fff;
+  background-color: #333;
+}
+
+.main-footer .btn-callback {
+  margin-top: 30px;
+  padding: 8px 5px;
+  font-size: 14px;
+}
+
+.footer-nav-title {
+  margin-bottom: 17px;
+  text-transform: uppercase;
+}
+
+.footer-nav-list li {
+  margin-bottom: 8px;
+}
+
+.footer-nav-list a {
+  font-weight: 300;
+  color: #fff;
+}
+
+.webstudio h6 {
+  margin-bottom: 20px;
+}
+
+/* ====================== Modal ====================== */
+.modal .close {
+  font-size: 25px;
+}
+
+.modal-title {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.modal-desc {
+  color: #666;
+}
+
+.modal .btn-primary {
+  border-color: #999;
 }
