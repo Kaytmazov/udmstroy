@@ -69,7 +69,7 @@ gulp.task('svg-sprite', function() {
 gulp.task('svg-min', function() {
   return gulp.src('assets/img/svg/*.svg')
     .pipe(svgmin())
-    .pipe(gulp.dest('img'));
+    .pipe(gulp.dest('img/icons'));
 });
 
 // Browser Sync
