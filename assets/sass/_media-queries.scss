@@ -30,7 +30,7 @@
 @media only screen and (max-width : 991px) {
 
   h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   h3 {
@@ -138,10 +138,6 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 
-  h2 {
-    font-size: 20px;
-  } 
-
   .section {
     &-header {
       margin-bottom: 20px;
@@ -191,7 +187,7 @@
 
   .carousel {
     &-inner>.item {
-      height: 250px;
+      height: 300px;
 
       img {
         height: 100%;
@@ -259,22 +255,24 @@
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
 
-  h2 {
-    font-size: 18px;
-  }
-
   .carousel {
     &-arrow {
-      display: none;
+      &.left {
+        left: 10px;
+      }
+
+      &.right {
+        right: 10px;
+      }
     }
 
     &-caption {
       .title {
-        font-size: 16px;
+        font-size: 20px;
       }
   
       .description {
-        display: none;
+        width: auto;
       }
     }
   }
@@ -288,6 +286,20 @@
   .advantages-item {
     width: 100%;
     margin-bottom: 20px;
+
+    &:nth-of-type(3) {
+      clear: none;
+    }
+  }
+
+  .slick-prev {
+    left: 20px;
+    top: 25%;
+  }
+  
+  .slick-next {
+    right: 20px;
+    top: 25%;
   }
 
   .calc {
@@ -299,11 +311,6 @@
     .form-desc {
       width: 100%;
     }
-  }
-
-  .questions .form-wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   .reviews-item {
@@ -334,6 +341,11 @@
     &-footer {
       text-align: justify;
     }
+  }
+
+  .questions .form-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .footer-logo {
