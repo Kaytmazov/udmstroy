@@ -716,6 +716,10 @@ img {
 /*--------------------------------------------------------------
 # Folio-card.html
 --------------------------------------------------------------*/
+.page-container {
+  min-height: 75vh;
+}
+
 .page-header {
   margin-bottom: 35px;
   text-align: center;
@@ -820,6 +824,43 @@ img {
 }
 
 /*--------------------------------------------------------------
+# dogovora.html
+--------------------------------------------------------------*/
+.dogovor-items-list {
+  margin-bottom: 50px;
+}
+
+.dogovor-items-list .col-sm-4:nth-child(6n+1) {
+  clear: both;
+}
+
+.dogovor-item {
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #333;
+}
+
+.dogovor-item:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.dogovor-item:hover .dogovor-item-box {
+  background-color: #333;
+  background-image: url(../img/icons/dogovor-download.svg);
+}
+
+.dogovor-item-box {
+  height: 160px;
+  background: #f9c82e url(../img/icons/dogovor.svg) no-repeat center;
+}
+
+.dogovor-item-title {
+  margin-top: 20px;
+}
+
+/*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
 /*==================================================
@@ -920,6 +961,12 @@ img {
   .webstudio {
     margin-top: 30px;
   }
+  .dogovor-items-list .col-sm-4:nth-child(6n+1) {
+    clear: none;
+  }
+  .dogovor-items-list .col-sm-4:nth-child(3n+1) {
+    clear: both;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -1012,6 +1059,12 @@ img {
   .card-form-title, .card-form-desc {
     text-align: center;
   }
+  .dogovor-items-list .col-sm-4:nth-child(3n+1) {
+    clear: none;
+  }
+  .dogovor-items-list .col-sm-4:nth-child(2n+1) {
+    clear: both;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -1094,5 +1147,11 @@ img {
   }
   .folio-card-list > .col-xs-6 {
     width: 100%;
+  }
+  .dogovor-items-list .col-sm-4 {
+    width: 100%;
+  }
+  .dogovor-items-list .col-sm-4:nth-child(2n+1) {
+    clear: none;
   }
 }

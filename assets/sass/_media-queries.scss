@@ -133,6 +133,15 @@
     margin-top: 30px;
   }
 
+  .dogovor-items-list .col-sm-4 {
+    &:nth-child(6n+1) {
+      clear: none;
+    }
+
+    &:nth-child(3n+1) {
+      clear: both;
+    }
+  }
 }
 
 /* Small Devices, Tablets */
@@ -259,6 +268,16 @@
     }
   }
 
+  .dogovor-items-list .col-sm-4 {
+    &:nth-child(3n+1) {
+      clear: none;
+    }
+
+    &:nth-child(2n+1) {
+      clear: both;
+    }
+  }
+
 }
 
 /* Extra Small Devices, Phones */ 
@@ -376,6 +395,13 @@
 
   .folio-card-list > .col-xs-6 {
     width: 100%;
+  }
+
+  .dogovor-items-list .col-sm-4 {
+    width: 100%;
+    &:nth-child(2n+1) {
+      clear: none;
+    }
   }
 
 }

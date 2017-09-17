@@ -687,6 +687,10 @@ img {
 # Folio-card.html
 --------------------------------------------------------------*/
 .page {
+  &-container {
+    min-height: 75vh;
+  }
+
   &-header {
     margin-bottom: 35px;
     text-align: center;
@@ -736,7 +740,6 @@ img {
         right: 10px;
       }
     }
-
   }
 
   &-item {
@@ -798,6 +801,43 @@ img {
   &-title {
     margin-top: 15px;
     margin-bottom: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# dogovora.html
+--------------------------------------------------------------*/
+.dogovor-items-list {
+  margin-bottom: 50px;
+
+  .col-sm-4:nth-child(6n+1) {
+    clear: both;
+  }
+}
+
+.dogovor-item {
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #333;
+
+  &:hover {
+    text-decoration: none;
+    color: #333;
+
+    .dogovor-item-box {
+      background-color: #333;
+      background-image: url(../img/icons/dogovor-download.svg);
+    }
+  }
+
+  &-box {
+    height: 160px;
+    background: $primary-color url(../img/icons/dogovor.svg) no-repeat center;
+  }
+
+  &-title {
+    margin-top: 20px;
   }
 }
 
