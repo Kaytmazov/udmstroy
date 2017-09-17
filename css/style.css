@@ -908,6 +908,7 @@ img {
 
 .contacts-form textarea {
   height: 163px;
+  resize: none;
 }
 
 /*--------------------------------------------------------------
