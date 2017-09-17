@@ -684,6 +684,124 @@ img {
 }
 
 /*--------------------------------------------------------------
+# Folio-card.html
+--------------------------------------------------------------*/
+.page {
+  &-header {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  &-title {
+    font-size: 30px;
+    text-transform: none;
+  }
+}
+
+.breadcrumb {
+  text-transform: lowercase;
+
+  li:first-child a {
+    text-decoration: underline;
+  }
+
+  a {
+    color: $primary-color;
+  }
+}
+
+.gallery {
+  &-for {
+    padding-bottom: 15px;
+
+    .slick {
+      &-arrow {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #333;
+        background-image: url(../img/icons/icon-next-white.svg);
+
+        &:hover,
+        &:focus {
+          background-color: $primary-color;
+        }
+      }
+
+      &-prev {
+        left: 10px;
+      }
+
+      &-next {
+        right: 10px;
+      }
+    }
+
+  }
+
+  &-item {
+    padding: 15px;
+
+    &.slick-current img {
+      border-color: $primary-color;
+    }
+
+    img {
+      border: 1px solid transparent;
+      cursor: pointer;
+
+      &:hover {
+        border-color: $primary-color;
+      }
+    }
+  }
+}
+
+.card-info {
+  margin-bottom: 20px;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.card-form {
+  &-title {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &-desc {
+    margin-bottom: 20px;
+    color: #666;
+  }
+
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+}
+
+.folio-other {
+  &-item {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &-title {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+}
+
+/*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
 @import "media-queries";

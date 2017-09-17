@@ -250,6 +250,15 @@
     margin-top: 30px;
   }
 
+  .card-form {
+    margin-bottom: 15px;
+
+    &-title,
+    &-desc {
+      text-align: center;
+    }
+  }
+
 }
 
 /* Extra Small Devices, Phones */ 
@@ -363,6 +372,10 @@
   .webstudio h6 {
     margin-bottom: 10px;
     font-size: 13px;
+  }
+
+  .folio-card-list > .col-xs-6 {
+    width: 100%;
   }
 
 }

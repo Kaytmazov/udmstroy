@@ -714,6 +714,112 @@ img {
 }
 
 /*--------------------------------------------------------------
+# Folio-card.html
+--------------------------------------------------------------*/
+.page-header {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 30px;
+  text-transform: none;
+}
+
+.breadcrumb {
+  text-transform: lowercase;
+}
+
+.breadcrumb li:first-child a {
+  text-decoration: underline;
+}
+
+.breadcrumb a {
+  color: #f9c82e;
+}
+
+.gallery-for {
+  padding-bottom: 15px;
+}
+
+.gallery-for .slick-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  background-image: url(../img/icons/icon-next-white.svg);
+}
+
+.gallery-for .slick-arrow:hover, .gallery-for .slick-arrow:focus {
+  background-color: #f9c82e;
+}
+
+.gallery-for .slick-prev {
+  left: 10px;
+}
+
+.gallery-for .slick-next {
+  right: 10px;
+}
+
+.gallery-item {
+  padding: 15px;
+}
+
+.gallery-item.slick-current img {
+  border-color: #f9c82e;
+}
+
+.gallery-item img {
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.gallery-item img:hover {
+  border-color: #f9c82e;
+}
+
+.card-info {
+  margin-bottom: 20px;
+}
+
+.card-info p {
+  margin-bottom: 0;
+}
+
+.card-form-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.card-form-desc {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.card-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.folio-other-item {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+}
+
+.folio-other-item:hover, .folio-other-item:focus {
+  text-decoration: none;
+}
+
+.folio-other-title {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
 /*==================================================
@@ -900,6 +1006,12 @@ img {
   .footer-nav {
     margin-top: 30px;
   }
+  .card-form {
+    margin-bottom: 15px;
+  }
+  .card-form-title, .card-form-desc {
+    text-align: center;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -979,5 +1091,8 @@ img {
   .webstudio h6 {
     margin-bottom: 10px;
     font-size: 13px;
+  }
+  .folio-card-list > .col-xs-6 {
+    width: 100%;
   }
 }
