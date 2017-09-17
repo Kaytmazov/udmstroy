@@ -142,6 +142,10 @@
       clear: both;
     }
   }
+
+  .contacts-list {
+    justify-content: space-around;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -278,6 +282,9 @@
     }
   }
 
+  .contacts-item {
+    margin-bottom: 30px;
+  }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -404,4 +411,17 @@
     }
   }
 
+  .contacts-item-value {
+    font-size: 18px;
+  }
+
+  .contacts-form-title {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .page-container {
+    min-height: 81vh;
+  }
 }

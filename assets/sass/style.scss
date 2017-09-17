@@ -688,7 +688,8 @@ img {
 --------------------------------------------------------------*/
 .page {
   &-container {
-    min-height: 75vh;
+    min-height: 74vh;
+    padding-bottom: 100px;
   }
 
   &-header {
@@ -838,6 +839,50 @@ img {
 
   &-title {
     margin-top: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# contacts.html
+--------------------------------------------------------------*/
+.contacts-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacts-item {
+  margin-bottom: 55px;
+
+  svg {
+    vertical-align: middle;
+  }
+
+  &-value {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #333;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.contacts-form {
+  &-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    height: 163px;
   }
 }
 

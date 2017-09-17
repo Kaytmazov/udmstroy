@@ -717,7 +717,8 @@ img {
 # Folio-card.html
 --------------------------------------------------------------*/
 .page-container {
-  min-height: 75vh;
+  min-height: 74vh;
+  padding-bottom: 100px;
 }
 
 .page-header {
@@ -861,6 +862,55 @@ img {
 }
 
 /*--------------------------------------------------------------
+# contacts.html
+--------------------------------------------------------------*/
+.contacts-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.contacts-item {
+  margin-bottom: 55px;
+}
+
+.contacts-item svg {
+  vertical-align: middle;
+}
+
+.contacts-item-value {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #333;
+}
+
+.contacts-item-value:hover, .contacts-item-value:focus {
+  text-decoration: none;
+}
+
+.contacts-form-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.contacts-form textarea {
+  height: 163px;
+}
+
+/*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
 /*==================================================
@@ -967,6 +1017,11 @@ img {
   .dogovor-items-list .col-sm-4:nth-child(3n+1) {
     clear: both;
   }
+  .contacts-list {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -1065,6 +1120,9 @@ img {
   .dogovor-items-list .col-sm-4:nth-child(2n+1) {
     clear: both;
   }
+  .contacts-item {
+    margin-bottom: 30px;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -1153,5 +1211,17 @@ img {
   }
   .dogovor-items-list .col-sm-4:nth-child(2n+1) {
     clear: none;
+  }
+  .contacts-item-value {
+    font-size: 18px;
+  }
+  .contacts-form-title {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .page-container {
+    min-height: 81vh;
   }
 }
